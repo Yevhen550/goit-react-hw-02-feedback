@@ -1,0 +1,35 @@
+.scale {
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: var(--neutral-color);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.type {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.good {
+    composes: type;
+    background-color: var(--good-color);
+}
+
+.neutral {
+    composes: type;
+    background-color: var(--neutral-color);
+}
+
+.bad {
+    composes: type;
+    background-color: var(--bad-color);
+}
