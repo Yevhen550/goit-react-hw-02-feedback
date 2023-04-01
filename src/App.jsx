@@ -35,7 +35,7 @@ export class App extends Component {
 
     return (
       <Container>
-        <Section title='Please leave your feedback'>
+        <Section title='Please leave feedback'>
           <FeedbackOptions
             options={this.options}
             handleFeedback={this.handleFeedback}
@@ -54,7 +54,7 @@ export class App extends Component {
             </Statistics>
           </Section>
         ) : (
-          <Notification message='No feedback given' />
+          <Notification message='There is no feedback' />
         )}
       </Container>
     );
